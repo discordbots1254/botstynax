@@ -57,15 +57,13 @@ bot.on("message",function(message){
                 icon_url: "https://cdn.discordapp.com/avatars/370964541917495296/3457e4030ed8da03fb959a825b8f6831.png?size=128"
               },
             description: "Commands :",
-            fields: [{
-                name: ">>Buy",
-                value: "For buy vero (get info) "
-              },
-            ],
+            
 
               fields: [{
                 name: ">>Credits",
                 value: "Get all Credits "
+                  name: ">>buy",
+                  value: "Get infos for buy"
               },
            
             
@@ -80,7 +78,9 @@ bot.on("message",function(message){
         
 
         break;
+            
         case "Credits":
+            
         message.channel.send({embed: {
             color: 3447003,
             title: "^Help 4 Vero",
@@ -92,7 +92,7 @@ bot.on("message",function(message){
             description: "All credits",
             fields: [{
                 name: "Credits",
-                value: "Credits to [CODEUR-SQUAD]▲Aida▲#0838 & 🎃๖ۣۜLolilol🎃#7469 Coder , helper   "
+                value: "Credits to Lolilol "
               },
             ],
            
