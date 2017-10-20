@@ -20,30 +20,32 @@ bot.on("message",function(message){
     
     switch (args[0].toLowerCase()){
     
-        case "credits":
-        message.channel.sendMessage("``` OWNER: [EC] [ED] [YT] Stynax🎃#2721    +  ๖ۣۜFireModz#7133   ``` ");
-        message.channel.sendMessage("``` Bot Dev : Lolilol#7469 ``` ");
-        break;
-        case"help":
-        message.channel.sendMessage(" :white_check_mark:, **Help sent**");
-        message.author.sendMessage("commands prefix '>>' Commands list :")
-        message.author.sendMessage(">>credits - get all credits")
-        message.author.sendMessage(">>purchase - get all infos for buy the script hub.")
-        break;
-        case "purchase":
-        message.author.send({embed: {
-          color: 3447003,
-    
-         
-          description: "10$ PayPal for get your whitelist code (off sale) ", 
-        }});
-        message.channel.send({embed: {
-            color: 3447003,
       
-           
-            description: "10$ PayPal for get your whitelist code (off sale) ", 
-          }});
-    
+        case "buy":
+
+    message.channel.send({embed: {
+    color: 3447003,
+    author: {
+      name: client.user.username,
+      icon_url: client.user.avatarURL
+    },
+    title: "Buy Vero",
+  
+       
+    description: "You can buy Vero with",
+    fields: [{
+        name: "Gift Card ",
+        value: "Roblox Card , Psn card , Steam card , or Robux (260) dm the owner for buy it! || NO PAYPAL||"
+      },
+     
+    ],
+    timestamp: new Date(),
+    footer: {
+      icon_url: client.user.avatarURL,
+      text: "©VeroEx"
+    }
+  }
+});
       
     
       break;
