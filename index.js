@@ -47,6 +47,68 @@ bot.on("message",function(message){
 
         break;
     
+        case "help":
+        message.channel.send({embed: {
+            color: 3447003,
+            title: "Help 4 Vero",
+            url: "",
+            author: {
+                name: "Vero Bot",
+                icon_url: "https://cdn.discordapp.com/avatars/370964541917495296/3457e4030ed8da03fb959a825b8f6831.png?size=128"
+              },
+            description: "Commands :",
+            fields: [{
+                name: ">>Buy",
+                value: "For buy vero (get info) "
+              },
+            ],
+
+              fields: [{
+                name: ">>Credits",
+                value: "Get all Credits "
+              },
+           
+            
+             
+            ],
+            timestamp: new Date(),
+            footer: {
+              text: "©Vero Bot 2017"
+            }
+          }
+        });
+        
+
+        break;
+        case "Credits":
+        message.channel.send({embed: {
+            color: 3447003,
+            title: "^Help 4 Vero",
+            url: "",
+            author: {
+                name: "Vero Bot",
+                icon_url: "https://cdn.discordapp.com/avatars/370964541917495296/3457e4030ed8da03fb959a825b8f6831.png?size=128"
+              },
+            description: "All credits",
+            fields: [{
+                name: "Credits",
+                value: "Credits to [CODEUR-SQUAD]▲Aida▲#0838 & 🎃๖ۣۜLolilol🎃#7469 Coder , helper   "
+              },
+            ],
+           
+            
+             
+         
+            timestamp: new Date(),
+            footer: {
+              text: "©Vero Bot 2017"
+            }
+          }
+        });
+        
+
+        break;
+
     
     
         
@@ -58,5 +120,8 @@ bot.on("message",function(message){
     }
     
     });
+    
+    
+
     
     bot.login(process.env.BOT_TOKEN);
