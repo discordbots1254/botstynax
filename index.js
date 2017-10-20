@@ -39,12 +39,6 @@ bot.on("message",function(message){
       },
      
     ],
-    timestamp: new Date(),
-    footer: {
-      icon_url: client.user.avatarURL,
-      text: "©VeroEx"
-    }
-  }
 });
       
     
