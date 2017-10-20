@@ -60,8 +60,6 @@ bot.on("message",function(message){
             
 
               fields: [{
-                name: ">>Credits",
-                value: "Get all Credits "
                   name: ">>buy",
                   value: "Get infos for buy"
               },
@@ -78,36 +76,7 @@ bot.on("message",function(message){
         
 
         break;
-            
-        case "Credits":
-            
-        message.channel.send({embed: {
-            color: 3447003,
-            title: "^Help 4 Vero",
-            url: "",
-            author: {
-                name: "Vero Bot",
-                icon_url: "https://cdn.discordapp.com/avatars/370964541917495296/3457e4030ed8da03fb959a825b8f6831.png?size=128"
-              },
-            description: "All credits",
-            fields: [{
-                name: "Credits",
-                value: "Credits to Lolilol "
-              },
-            ],
-           
-            
-             
-         
-            timestamp: new Date(),
-            footer: {
-              text: "©Vero Bot 2017"
-            }
-          }
-        });
-        
-
-        break;
+       
 
     
     
