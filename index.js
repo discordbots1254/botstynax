@@ -8,7 +8,7 @@ const PREFIX = ">>";
 
 bot.on("message",function(message){
     
-     bot.User.setGame('sales on (dm  the owner or type ">>buy")');
+    
     
     
     if (message.author.equals(bot.user)) return;
@@ -106,7 +106,9 @@ bot.on("message",function(message){
 
         break;
        
-
+case "gamebotwhitelisting"
+             bot.user.setGame('sales on (dm  the owner or type ">>buy")');
+            break;
     
     
         
