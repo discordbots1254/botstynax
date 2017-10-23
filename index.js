@@ -105,12 +105,14 @@ bot.on("message",function(message){
         
 
         break;
-       
-case "gamebotwhitelisting"
-             bot.user.setGame('sales on (dm  the owner or type ">>buy")');
-            break;
+            
+          case "codesecretfr":
+       bot.user.setGame('sales on (dm  the owner or type ">>buy")');
+
+        break;
+
     
-    
+   
         
     
     
