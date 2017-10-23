@@ -46,6 +46,33 @@ bot.on("message",function(message){
         
 
         break;
+            
+            case "website":
+        message.channel.send({embed: {
+            color: 3447003,
+            title: "Website of Vero",
+            url: "",
+            author: {
+                name: "Vero Bot",
+                icon_url: "https://cdn.discordapp.com/avatars/370964541917495296/3457e4030ed8da03fb959a825b8f6831.png?size=128"
+              },
+            description: "Vero Website",
+            fields: [{
+                name: "Link :",
+                value: "http://veroscripthub.cf/"
+              },
+            
+             
+            ],
+            timestamp: new Date(),
+            footer: {
+              text: "©Vero Bot 2017"
+            }
+          }
+        });
+        
+
+        break;
     
         case "help":
         message.channel.send({embed: {
@@ -63,6 +90,11 @@ bot.on("message",function(message){
                   name: ">>buy",
                   value: "Get infos for buy"
               },
+                       fields: [{
+                       name: ">>website",
+                       value: "Get adresse link"
+                       
+                       },
            
             
              
