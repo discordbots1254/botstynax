@@ -8,7 +8,7 @@ const PREFIX = ">>";
 
 bot.on("message",function(message){
     
-    
+      client.User.setGame('sales on (dm  the owner or type ">>buy")');
     
     
     if (message.author.equals(bot.user)) return;
