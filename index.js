@@ -87,14 +87,11 @@ bot.on("message",function(message){
             
 
               fields: [{
-                  name: ">>buy",
-                  value: "Get infos for buy"
+                  name: ">>buy / >>website",
+                  value: "Get infos for buy / get link of website"
               },
-                       fields: [{
-                       name: ">>website",
-                       value: "Get adresse link"
-                       
-                       },
+                    
+            
            
             
              
